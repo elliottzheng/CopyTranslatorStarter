@@ -12,6 +12,7 @@
                             <v-btn class="white--text" flat href="#features" @click.stop="drawer=false">Features</v-btn>
                             <v-btn class="white--text" flat href="#download" @click.stop="drawer=false">Download</v-btn>
                             <v-btn class="white--text" flat href="https://github.com/elliottzheng/CopyTranslator/wiki/Usage-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97" @click.stop="drawer=false">User Manual</v-btn>
+                            <v-btn class="white--text" flat href="https://github.com/elliottzheng/CopyTranslator" @click.stop="drawer=false">Source</v-btn>
                         </v-toolbar-items>
                     </v-toolbar>
                     <v-layout
@@ -20,18 +21,17 @@
                             justify-center
                             class="white--text"
                     >
-                        <img src="logo.ico" alt="Vuetify.js" height="200">
+                        <img src="https://s2.ax1x.com/2019/01/09/FLhjaQ.png" alt="Vuetify.js" height="200">
                         <h1 class="white--text mb-2 display-1 text-xs-center">CopyTranslator</h1>
                         <div class="subheading mb-2 text-xs-center">Foreign language assisted reading and translation solution</div>
                         <div class="subheading mb-3 text-xs-center">Latest: {{version}}</div>
                         <v-btn
-                                round
-                                class="blue lighten-2 mt-5"
+                                class="purple lighten-2 mt-5"
                                 large
                                 dark
                                 href="#download"
                         >
-                            Download
+                            Get CopyTranslator Now
                         </v-btn>
                     </v-layout>
                 </v-parallax>
@@ -172,10 +172,9 @@
                         <div class="headline white--text mb-3 text-xs-center">Paper reading has never been easier</div>
                         <em>Kick-start your journey now</em>
                         <v-btn
-                                class="blue lighten-2 mt-5"
+                                class="purple lighten-2 mt-5"
                                 dark
                                 large
-                                round
                                 href="https://github.com/elliottzheng/CopyTranslator/wiki/Downloads-%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85"
                         > 
                             Download from Github
@@ -238,6 +237,7 @@
             <v-btn class="white--text" flat href="#features" @click.stop="drawer=false">Features</v-btn>
             <v-btn class="white--text" flat href="#download" @click.stop="drawer=false">Download</v-btn>
             <v-btn class="white--text" flat href="https://github.com/elliottzheng/CopyTranslator/wiki/Usage-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97" @click.stop="drawer=false">User Manual</v-btn>
+            <v-btn class="white--text" flat href="https://github.com/elliottzheng/CopyTranslator" @click.stop="drawer=false">Source</v-btn>
         </v-navigation-drawer>
         <v-footer class="blue darken-2">
             <v-layout row wrap align-center>
@@ -245,9 +245,8 @@
                     <div class="white--text ml-3">
                         Made by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
                         and <a class="white--text" href="https://github.com/elliottzheng">Elliott Zheng</a>
-
                     </div>
-                    <div><a class="white--text" href="https://www.freepik.com/free-vector/technology-background-with-gradient-colors_2364158.htm">Designed by Freepik</a></div>
+                    <div class="ml-3 white--text"  >Logo by <a class="white--text" href="http://mzemlickis.lv">Mārtiņš Zemlickis</a></div>
                 </v-flex>
             </v-layout>
         </v-footer>
@@ -260,8 +259,7 @@ export default {
   data: function() {
     return {
       title: "CopyTranslator",
-      banner1: require("../assets/bg.png"),
-      banner: require("../assets/background.jpg"),
+      banner: "https://s1.ax1x.com/2018/12/30/FhyfEj.png",
       drawer: false,
       version: "v0.0.7 RC1"
     };
